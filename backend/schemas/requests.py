@@ -39,7 +39,7 @@ class GenerateHypothesesRequest(BaseModel):
         default=5,
         ge=1,
         le=20,
-        description="Number of hypotheses to generate (1–20).",
+        description="Number of hypotheses to generate (1-20).",
     )
 
     @property

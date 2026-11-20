@@ -1,4 +1,4 @@
-"""Evaluation service — baseline comparison, metrics, ablation."""
+"""Evaluation service -- baseline comparison, metrics, ablation."""
 
 from __future__ import annotations
 

@@ -25,7 +25,7 @@ async def export_run_report(
         raise HTTPException(status_code=404, detail=f"Run {run_id} not found")
 
     report = {
-        "title": "EvidenceGap AI 2026 — Evidence-Grounded Research Report",
+        "title": "EvidenceGap AI 2026 -- Evidence-Grounded Research Report",
         "academic_title": "Ontology-Guided Hypothesis Generation Using LLMs and Topic Modeling in mHealth Research",
         "run": run_detail.model_dump(),
         "metadata": {

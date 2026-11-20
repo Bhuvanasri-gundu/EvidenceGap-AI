@@ -1,4 +1,4 @@
-"""Research service — wraps src/ modules for gap discovery, knowledge graph, retrieval."""
+"""Research service -- wraps src/ modules for gap discovery, knowledge graph, retrieval."""
 
 from __future__ import annotations
 

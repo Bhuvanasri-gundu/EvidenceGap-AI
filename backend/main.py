@@ -1,4 +1,4 @@
-"""EvidenceGap AI 2026 — FastAPI Application Entry Point.
+"""EvidenceGap AI 2026 -- FastAPI Application Entry Point.
 
 Ontology-Guided Hypothesis Generation Using LLMs and RAG.
 """

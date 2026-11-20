@@ -1,4 +1,4 @@
-"""Corpus service — wraps src/ modules for corpus and document operations."""
+"""Corpus service -- wraps src/ modules for corpus and document operations."""
 
 from __future__ import annotations
 
@@ -65,7 +65,7 @@ class CorpusService:
             {"journal": row.journal, "count": row.cnt} for row in result
         ]
 
-        # MeSH term count (approximate — count non-null rows)
+        # MeSH term count (approximate -- count non-null rows)
         mesh_count = await self.session.scalar(
             select(func.count(Document.id)).where(Document.mesh_terms.isnot(None))
         )

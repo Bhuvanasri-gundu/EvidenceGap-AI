@@ -1,4 +1,4 @@
-"""Hypothesis service — generation, challenge, refinement, ranking."""
+"""Hypothesis service -- generation, challenge, refinement, ranking."""
 
 from __future__ import annotations
 
@@ -502,7 +502,7 @@ class HypothesisService:
             logger.info("src.topic_modeling not available; skipping processing stage.")
 
     async def _stage_analyze(self, run: Run) -> None:
-        """Stage 3: Gap discovery → Hypothesis generation → Validation → Ranking."""
+        """Stage 3: Gap discovery -> Hypothesis generation -> Validation -> Ranking."""
         # Gap discovery
         gaps_data: list[dict[str, Any]] = []
         try:
