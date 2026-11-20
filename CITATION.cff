@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+title: "Ontology-Guided Hypothesis Generation Using LLMs and Topic Modeling in mHealth Research"
+abstract: "EvidenceGap AI: An evidence-grounded research assistant for mobile health literature integrating document analysis, topic modeling, biomedical ontologies, retrieval-augmented generation, and evidence challenge."
+authors:
+  - family-names: "Gundu"
+    given-names: "Bhuvanasri"
+version: 1.0.0
+date-released: 2026-11-20
+repository-code: "https://github.com/Bhuvanasri-gundu/EvidenceGap-AI"
+license: "MIT"
+keywords:
+  - "mobile health"
+  - "mHealth"
+  - "retrieval-augmented generation"
+  - "biomedical ontologies"
+  - "MeSH"
+  - "topic modeling"
+  - "BERTopic"
+  - "natural language inference"
+  - "hypothesis generation"
