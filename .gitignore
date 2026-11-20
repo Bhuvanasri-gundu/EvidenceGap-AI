@@ -1,0 +1,74 @@
+# Byte-compiled / Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment & secrets (CRITICAL: Never commit credentials)
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing & Type Checking (Excluded per specification)
+tests/
+.pytest_cache/
+htmlcov/
+.coverage
+.mypy_cache/
+
+# Data, Corpus & Persistence (Local storage only)
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Models & Weights (Local storage only)
+models/
+*.bin
+*.pt
+*.safetensors
+*.onnx
+
+# Artifacts & Indexes (Embeddings, FAISS, Graphs, etc.)
+artifacts/
+
+# Generated Outputs & Evaluations
+outputs/
+
+# Logs
+*.log
+logs/
+
+# Frontend dependencies & builds
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+build/
+frontend/build/
+.vite/
+frontend/.vite/
+*.tsbuildinfo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Scratch scripts
+scripts/make_clean_commits.py
