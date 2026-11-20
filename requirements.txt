@@ -1,0 +1,76 @@
+# EvidenceGap AI 2026 — Python Dependencies
+# Ontology-Guided Hypothesis Generation Using LLMs and RAG
+
+# Core Backend
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.3
+pydantic-settings==2.7.1
+sqlalchemy==2.0.36
+aiosqlite==0.20.0
+python-multipart==0.0.19
+httpx==0.28.1
+
+# Data Processing
+pandas==2.2.3
+numpy==1.26.4
+openpyxl==3.1.5
+
+# NLP & Biomedical
+spacy==3.8.4
+scispacy==0.5.5
+sentence-transformers==3.3.1
+transformers==4.47.1
+torch==2.5.1
+tokenizers==0.21.0
+
+# Topic Modeling
+bertopic==0.16.4
+hdbscan==0.8.40
+umap-learn==0.5.7
+gensim==4.3.3
+scikit-learn==1.6.0
+
+# Vector Search
+faiss-cpu==1.9.0.post1
+
+# Knowledge Graph
+networkx==3.4.2
+
+# NLI / Entailment
+# Uses transformers pipeline with DeBERTa
+
+# LLM Integration
+google-generativeai==0.8.4
+
+# Ontology / External APIs
+biopython==1.84
+requests==2.32.3
+lxml==5.3.0
+
+# Visualization
+matplotlib==3.10.0
+plotly==5.24.1
+seaborn==0.13.2
+wordcloud==1.9.4
+pyvis==0.3.2
+
+# Logging & Config
+python-dotenv==1.0.1
+structlog==24.4.0
+rich==13.9.4
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-cov==6.0.0
+httpx==0.28.1
+
+# Notebooks
+jupyter==1.1.1
+ipykernel==6.29.5
+nbformat==5.10.4
+
+# Background Tasks
+celery==5.4.0
+apscheduler==3.11.0
