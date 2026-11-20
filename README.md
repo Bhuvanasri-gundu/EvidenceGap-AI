@@ -103,36 +103,36 @@ pytest tests/ -v --cov=src --cov=backend
 ## Architecture Overview
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                   React Frontend                      │
-│  ┌──────────────┐  ┌────────────────────────────┐   │
-│  │  Hypothesis   │  │  Research & Validation      │   │
-│  │  Generation   │  │  Workspace                  │   │
-│  └──────┬───────┘  └─────────────┬──────────────┘   │
-└─────────┼────────────────────────┼──────────────────┘
-          │       REST API         │
-┌─────────┼────────────────────────┼──────────────────┐
-│         ▼       FastAPI          ▼                    │
-│  ┌────────────────────────────────────────────────┐  │
-│  │  API Layer → Services → Background Jobs         │  │
-│  └────────────────────┬───────────────────────────┘  │
-│                       │                               │
-│  ┌────────────────────▼───────────────────────────┐  │
-│  │          Research Pipeline (src/)                │  │
-│  │                                                  │  │
-│  │  Data Collection → Preprocessing → Embeddings    │  │
-│  │  → Topic Modeling → Ontology Mapping             │  │
-│  │  → Knowledge Graph → Gap Discovery               │  │
-│  │  → Chunking → FAISS Retrieval                    │  │
-│  │  → Hypothesis Generation → Evidence Challenge    │  │
-│  │  → Validation → Refinement → Ranking             │  │
-│  │  → Evaluation                                    │  │
-│  └──────────────────────────────────────────────────┘  │
-│                       │                               │
-│  ┌────────────────────▼───────────────────────────┐  │
-│  │  SQLite + FAISS Index + File Artifacts           │  │
-│  └──────────────────────────────────────────────────┘  │
-└──────────────────────────────────────────────────────┘
++-----------------------------------------------------+
+|                   React Frontend                      |
+|  +--------------+  +----------------------------+   |
+|  |  Hypothesis   |  |  Research & Validation      |   |
+|  |  Generation   |  |  Workspace                  |   |
+|  +--------------+  +----------------------------+   |
++---------+------------------------+------------------+
+          |       REST API         |
++---------+------------------------+------------------+
+|         v       FastAPI          v                    |
+|  +------------------------------------------------+  |
+|  |  API Layer -> Services -> Background Jobs         |  |
+|  +------------------------------------------------+  |
+|                       |                               |
+|  +--------------------v---------------------------+  |
+|  |          Research Pipeline (src/)                |  |
+|  |                                                  |  |
+|  |  Data Collection -> Preprocessing -> Embeddings    |  |
+|  |  -> Topic Modeling -> Ontology Mapping             |  |
+|  |  -> Knowledge Graph -> Gap Discovery               |  |
+|  |  -> Chunking -> FAISS Retrieval                    |  |
+|  |  -> Hypothesis Generation -> Evidence Challenge    |  |
+|  |  -> Validation -> Refinement -> Ranking             |  |
+|  |  -> Evaluation                                    |  |
+|  +--------------------------------------------------+  |
+|                       |                               |
+|  +--------------------v---------------------------+  |
+|  |  SQLite + FAISS Index + File Artifacts           |  |
+|  +--------------------------------------------------+  |
++------------------------------------------------------+
 ```
 
 ---
@@ -156,21 +156,21 @@ pytest tests/ -v --cov=src --cov=backend
 
 ```
 EvidenceGap_AI_2026/
-├── frontend/          # React application
-├── backend/           # FastAPI server
-├── src/               # Research pipeline modules
-├── notebooks/         # Jupyter notebooks (phases 1-3)
-├── data/              # Raw, processed, fulltext data
-├── artifacts/         # Embeddings, FAISS, topics, ontology, graphs
-├── outputs/           # Gaps, hypotheses, validation, evaluation
-├── models/            # Saved model files
-├── tests/             # Test suite
-├── scripts/           # Utility scripts
-├── config/            # Configuration
-├── docs/              # Documentation
-├── requirements.txt   # Python dependencies
-├── .env.example       # Environment template
-└── .gitignore
+|-- frontend/          # React application
+|-- backend/           # FastAPI server
+|-- src/               # Research pipeline modules
+|-- notebooks/         # Jupyter notebooks (phases 1-3)
+|-- data/              # Raw, processed, fulltext data
+|-- artifacts/         # Embeddings, FAISS, topics, ontology, graphs
+|-- outputs/           # Gaps, hypotheses, validation, evaluation
+|-- models/            # Saved model files
+|-- tests/             # Test suite
+|-- scripts/           # Utility scripts
+|-- config/            # Configuration
+|-- docs/              # Documentation
+|-- requirements.txt   # Python dependencies
+|-- .env.example       # Environment template
++-- .gitignore
 ```
 
 ---

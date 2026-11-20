@@ -1,4 +1,4 @@
-# EvidenceGap AI 2026 — Scientific Evaluation Framework
+# EvidenceGap AI 2026 -- Scientific Evaluation Framework
 
 ## 1. Evaluation Objectives
 
@@ -10,19 +10,19 @@ The evaluation framework quantitatively and qualitatively assesses whether the p
 
 To ensure fair comparison, all systems are evaluated on identical clinical research queries under identical computational conditions:
 
-1. **Baseline 1 — Plain LLM**:
+1. **Baseline 1 -- Plain LLM**:
    - Direct prompt-to-hypothesis generation without literature retrieval or ontological constraints.
    - Represents the status quo of exploratory ideation using general-purpose LLMs.
 
-2. **Baseline 2 — Standard Semantic RAG**:
+2. **Baseline 2 -- Standard Semantic RAG**:
    - Vector similarity retrieval over PubMed chunk embeddings (dense semantic search).
    - Generates hypotheses grounded in top retrieved passages, without ontology guidance or challenge.
 
-3. **System Variant — Ontology-Guided RAG (Ours - Base)**:
+3. **System Variant -- Ontology-Guided RAG (Ours - Base)**:
    - Dense retrieval enhanced with MeSH hierarchy query expansion and topic guidance.
    - No adversarial evidence challenge or refinement loop.
 
-4. **Proposed System — Full EvidenceGap AI Pipeline (Ours - Full)**:
+4. **Proposed System -- Full EvidenceGap AI Pipeline (Ours - Full)**:
    - Topic modeling + MeSH ontology expansion + candidate gap discovery.
    - Structured hypothesis synthesis.
    - **Evidence Challenge Engine**: Automated adversarial counter-querying for contradictory and null evidence.
@@ -77,7 +77,7 @@ To isolate the scientific contribution of each architectural component, systemat
 
 | Metric | Measured Value | Notes |
 |:---|:---|:---|
-| **Raw Harvested Publications** | 6,192 records | Retrieved via NCBI E-utilities (2016–2026) |
+| **Raw Harvested Publications** | 6,192 records | Retrieved via NCBI E-utilities (2016-2026) |
 | **Unique Deduplicated Records** | 5,874 records | Multi-identifier matching (PMID, PMCID, DOI, Title) |
 | **Retained Relevant Publications** | **5,000 records** | Filtered by mHealth clinical/technical relevance score ($\ge 1.0$) |
 | **PMC Open Access Full-Text Articles** | **427 articles** | Full JATS XML parsed into structured clinical sections |

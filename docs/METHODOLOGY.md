@@ -1,4 +1,4 @@
-# EvidenceGap AI 2026 — Methodology
+# EvidenceGap AI 2026 -- Methodology
 
 ## Research Methodology
 
@@ -83,7 +83,7 @@ The refinement preserves both original and revised versions for comparison.
 - **Methods**: Low concept co-occurrence + high ontological relatedness, temporal decline, sparse coverage
 - **Ranking**: Composite score from multiple signals
 - **Transparency**: Each gap has an explanation of contributing factors
-- **Caveat**: Low publication count ≠ confirmed gap
+- **Caveat**: Low publication count != confirmed gap
 
 #### Stage 6: Semantic Chunking and Retrieval
 

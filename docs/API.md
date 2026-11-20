@@ -1,4 +1,4 @@
-# EvidenceGap AI 2026 — REST API Documentation
+# EvidenceGap AI 2026 -- REST API Documentation
 
 The EvidenceGap AI backend is built with FastAPI and provides RESTful endpoints under `/api/v1`.
 
