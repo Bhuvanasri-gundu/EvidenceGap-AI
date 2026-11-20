@@ -1,4 +1,4 @@
-"""EvidenceGap AI 2026 — Central Configuration Module.
+"""EvidenceGap AI 2026 -- Central Configuration Module.
 
 Loads settings from environment variables and .env file.
 All configuration is centralized here to avoid scattered hardcoded values.

@@ -1,4 +1,4 @@
-"""EvidenceGap AI 2026 — Source Package.
+"""EvidenceGap AI 2026 -- Source Package.
 
 Ontology-Guided Hypothesis Generation Using LLMs and RAG
 for mHealth Evidence Gap Discovery.

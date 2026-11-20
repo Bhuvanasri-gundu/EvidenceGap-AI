@@ -72,3 +72,4 @@ frontend/.vite/
 
 # Scratch scripts
 scripts/make_clean_commits.py
+scripts/remove_emojis_and_symbols.py
