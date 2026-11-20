@@ -6,7 +6,7 @@ import type {
   ChallengeRequest,
 } from '@/types';
 
-// ─── Query Keys ────────────────────────────────────────────────────
+// --- Query Keys ----------------------------------------------------
 
 export const queryKeys = {
   runs: ['runs'] as const,
@@ -24,7 +24,7 @@ export const queryKeys = {
   corpus: ['corpus'] as const,
 };
 
-// ─── Runs ──────────────────────────────────────────────────────────
+// --- Runs ----------------------------------------------------------
 
 export function useRuns() {
   return useQuery({
@@ -54,7 +54,7 @@ export function useRunStatus(runId: string) {
   });
 }
 
-// ─── Hypotheses ────────────────────────────────────────────────────
+// --- Hypotheses ----------------------------------------------------
 
 export function useHypotheses(runId: string) {
   return useQuery({
@@ -72,7 +72,7 @@ export function useHypothesis(runId: string, hypothesisId: string) {
   });
 }
 
-// ─── Mutations ─────────────────────────────────────────────────────
+// --- Mutations -----------------------------------------------------
 
 export function useGenerateHypotheses() {
   const queryClient = useQueryClient();
@@ -107,7 +107,7 @@ export function useChallengeHypothesis(runId: string, hypothesisId: string) {
   });
 }
 
-// ─── Evidence ──────────────────────────────────────────────────────
+// --- Evidence ------------------------------------------------------
 
 export function useEvidence(runId: string, hypothesisId?: string) {
   return useQuery({
@@ -117,7 +117,7 @@ export function useEvidence(runId: string, hypothesisId?: string) {
   });
 }
 
-// ─── Validation ────────────────────────────────────────────────────
+// --- Validation ----------------------------------------------------
 
 export function useValidationResults(runId: string) {
   return useQuery({
@@ -135,7 +135,7 @@ export function useValidationResult(runId: string, hypothesisId: string) {
   });
 }
 
-// ─── Topics & Gaps ─────────────────────────────────────────────────
+// --- Topics & Gaps -------------------------------------------------
 
 export function useTopics(limit?: number) {
   return useQuery({
@@ -151,7 +151,7 @@ export function useGaps(runId?: string) {
   });
 }
 
-// ─── Evaluation ────────────────────────────────────────────────────
+// --- Evaluation ----------------------------------------------------
 
 export function useEvaluationMetrics(runId: string) {
   return useQuery({
@@ -161,7 +161,7 @@ export function useEvaluationMetrics(runId: string) {
   });
 }
 
-// ─── Knowledge Graph ───────────────────────────────────────────────
+// --- Knowledge Graph -----------------------------------------------
 
 export function useKnowledgeGraph(runId?: string) {
   return useQuery({
@@ -170,7 +170,7 @@ export function useKnowledgeGraph(runId?: string) {
   });
 }
 
-// ─── Corpus ────────────────────────────────────────────────────────
+// --- Corpus --------------------------------------------------------
 
 export function useCorpusStats() {
   return useQuery({

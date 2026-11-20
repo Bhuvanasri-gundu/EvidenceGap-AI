@@ -74,7 +74,7 @@ export default function ValidationPanel({ validationResults, hypotheses = [] }: 
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-100">
                 <span className="text-xs font-bold text-indigo-600 uppercase tracking-wider">
-                  Validation Breakdown — Hypothesis #{idx + 1}
+                  Validation Breakdown -- Hypothesis #{idx + 1}
                 </span>
                 <div className="flex items-center gap-2">
                   <span className={`inline-flex items-center gap-1 text-xs px-2.5 py-0.5 rounded-full font-medium ${
@@ -169,7 +169,7 @@ export default function ValidationPanel({ validationResults, hypotheses = [] }: 
                   <div className="space-y-1">
                     {val.prior_art.map((art, aIdx) => (
                       <p key={aIdx} className="text-xs text-slate-600 bg-white p-2 rounded border border-slate-100">
-                        • {art}
+                        - {art}
                       </p>
                     ))}
                   </div>

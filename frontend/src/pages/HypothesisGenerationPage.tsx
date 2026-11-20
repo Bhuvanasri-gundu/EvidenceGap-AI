@@ -21,7 +21,7 @@ import LoadingSpinner from '@/components/LoadingSpinner';
 export default function HypothesisGenerationPage() {
   const navigate = useNavigate();
 
-  // Form State — intentionally empty placeholders per requirements
+  // Form State -- intentionally empty placeholders per requirements
   const [theme, setTheme] = useState('');
   const [population, setPopulation] = useState('');
   const [objective, setObjective] = useState('');
@@ -145,7 +145,7 @@ export default function HypothesisGenerationPage() {
                   <label htmlFor="count" className="text-xs font-semibold text-slate-700">
                     Number of Hypotheses to Generate: <span className="text-indigo-600 font-bold">{numHypotheses}</span>
                   </label>
-                  <span className="text-xs text-slate-400">(Range: 1–20)</span>
+                  <span className="text-xs text-slate-400">(Range: 1-20)</span>
                 </div>
                 <input
                   id="count"

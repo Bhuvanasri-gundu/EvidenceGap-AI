@@ -1,6 +1,6 @@
-// ─── EvidenceGap AI 2026 — Comprehensive TypeScript Types ────────────────
+// --- EvidenceGap AI 2026 -- Comprehensive TypeScript Types ----------------
 
-// ─── Run & Pipeline ────────────────────────────────────────────────
+// --- Run & Pipeline ------------------------------------------------
 
 export type RunStatus = 'pending' | 'collecting' | 'processing' | 'analyzing' | 'complete' | 'failed';
 
@@ -36,7 +36,7 @@ export interface PipelineStep {
   message?: string;
 }
 
-// ─── Hypotheses ────────────────────────────────────────────────────
+// --- Hypotheses ----------------------------------------------------
 
 export type HypothesisStatus = 'generated' | 'validating' | 'validated' | 'refined' | 'challenged' | 'ranked' | 'failed';
 
@@ -73,7 +73,7 @@ export interface Hypothesis {
   challenge_results?: any;
 }
 
-// ─── Topics & Ontology ────────────────────────────────────────────
+// --- Topics & Ontology --------------------------------------------
 
 export interface Topic {
   id: string;
@@ -94,7 +94,7 @@ export interface TopicTrend {
   growth_rate?: number;
 }
 
-// ─── Research Gaps ─────────────────────────────────────────────────
+// --- Research Gaps -------------------------------------------------
 
 export interface ResearchGap {
   id: string;
@@ -110,7 +110,7 @@ export interface ResearchGap {
   created_at?: string;
 }
 
-// ─── Evidence ──────────────────────────────────────────────────────
+// --- Evidence ------------------------------------------------------
 
 export type EvidenceType = 'supporting' | 'contradictory' | 'neutral';
 
@@ -149,7 +149,7 @@ export interface RetrievalPassage {
   section?: string;
 }
 
-// ─── Validation ────────────────────────────────────────────────────
+// --- Validation ----------------------------------------------------
 
 export interface ValidationResult {
   hypothesis_id: string;
@@ -219,7 +219,7 @@ export interface ValidationSummary {
   avg_evidence_score: number;
 }
 
-// ─── Challenge ─────────────────────────────────────────────────────
+// --- Challenge -----------------------------------------------------
 
 export interface ChallengeRequest {
   challenge_type?: 'contradiction' | 'methodology' | 'population' | 'comprehensive';
@@ -245,7 +245,7 @@ export interface RefineRequest {
   incorporate_evidence?: boolean;
 }
 
-// ─── Evaluation ────────────────────────────────────────────────────
+// --- Evaluation ----------------------------------------------------
 
 export interface EvaluationMetrics {
   run_id: string;
@@ -271,7 +271,7 @@ export interface BaselineComparison {
   metric: string;
 }
 
-// ─── Knowledge Graph ───────────────────────────────────────────────
+// --- Knowledge Graph -----------------------------------------------
 
 export interface KnowledgeGraphData {
   nodes: GraphNode[];
@@ -293,7 +293,7 @@ export interface GraphEdge {
   source_type?: 'ontology' | 'literature';
 }
 
-// ─── Corpus ────────────────────────────────────────────────────────
+// --- Corpus --------------------------------------------------------
 
 export interface CorpusStats {
   total_documents?: number;
@@ -315,7 +315,7 @@ export interface CorpusSource {
   percentage: number;
 }
 
-// ─── API Payloads ──────────────────────────────────────────────────
+// --- API Payloads --------------------------------------------------
 
 export interface GenerateRequest {
   theme: string;

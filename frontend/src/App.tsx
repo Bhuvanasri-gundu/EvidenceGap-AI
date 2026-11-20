@@ -17,7 +17,7 @@ export default function App() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-sm text-slate-500">
-              © 2026 EvidenceGap AI — Ontology-Guided Research Hypothesis Generation
+              (c) 2026 EvidenceGap AI -- Ontology-Guided Research Hypothesis Generation
             </p>
             <p className="text-xs text-slate-400">
               Built for advancing scientific discovery through AI-powered evidence analysis
