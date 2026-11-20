@@ -1,4 +1,4 @@
-# EvidenceGap AI 2026 — Scientific Research Notebooks
+# EvidenceGap AI 2026 -- Scientific Research Notebooks
 
 This directory contains the 24 reproducible Jupyter Notebooks structured across three research phases. Each notebook imports production modules from `src/` and conducts transparent data analysis.
 
@@ -6,7 +6,7 @@ This directory contains the 24 reproducible Jupyter Notebooks structured across 
 
 ## Execution Guide & Notebook Inventory
 
-### Phase 1 — Scientific Literature Analysis & Gap Discovery
+### Phase 1 -- Scientific Literature Analysis & Gap Discovery
 Located in `notebooks/phase1/`
 
 | # | Notebook File | Objective | Key Inputs | Outputs / Artifacts |
@@ -24,7 +24,7 @@ Located in `notebooks/phase1/`
 
 ---
 
-### Phase 2 — RAG and Hypothesis Development
+### Phase 2 -- RAG and Hypothesis Development
 Located in `notebooks/phase2/`
 
 | # | Notebook File | Objective | Key Inputs | Outputs / Artifacts |
@@ -41,7 +41,7 @@ Located in `notebooks/phase2/`
 
 ---
 
-### Phase 3 — Evaluation
+### Phase 3 -- Evaluation
 Located in `notebooks/phase3/`
 
 | # | Notebook File | Objective | Key Inputs | Outputs / Artifacts |
