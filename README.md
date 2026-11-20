@@ -181,8 +181,34 @@ EvidenceGap_AI_2026/
 - [Methodology](docs/METHODOLOGY.md)
 - [Evaluation](docs/EVALUATION.md)
 - [API Reference](docs/API.md)
+- [Contribution Guidelines](CONTRIBUTING.md)
+- [Academic Citation](CITATION.cff)
 - [Notebooks Guide](notebooks/README.md)
-- [Model Inventory](models/README.md)
+
+---
+
+## Workspace Features (Screen 2)
+
+| Panel | Core Capabilities |
+|:---|:---|
+| **Overview Panel** | Run metadata, PICOT framework decomposition, execution timeline, and export |
+| **Research Gaps Panel** | Discovered underexplored concept relationships, co-occurrence scores, and temporal trends |
+| **Evidence & Sources Panel** | Section-attributed passages, PubMed PMIDs, PMC Open Access badges, and relevance scores |
+| **Scientific Validation Panel** | DeBERTa NLI predictions, citation verification checks, novelty scores, and falsifiability rules |
+| **Hypothesis Refinement Panel** | Side-by-side auditable comparison of initial claims versus refined, evidence-grounded hypotheses |
+| **Ranking & Baselines Panel** | Multi-criteria hypothesis ranking compared against Plain LLM and Vanilla RAG baselines |
+
+---
+
+## Empirical Benchmark (5,000-Document Corpus)
+
+- **Total Curated Articles**: 5,000 publications
+- **PMC Open Access Full-Text Articles**: 427 full-text papers (with Introduction, Methods, Results, Discussion, Conclusion)
+- **PubMed Abstract-Only Records**: 4,573 records
+- **Indexed Passage Chunks**: 29,752 chunks
+- **Knowledge Graph**: 500 nodes, 4,742 multi-relational edges
+- **Discovered Research Topics**: 8 themes (BERTopic + LDA Baseline)
+- **Candidate Research Gaps**: 9 underexplored areas
 
 ---
 
