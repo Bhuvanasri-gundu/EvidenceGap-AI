@@ -17,7 +17,7 @@ def make_notebook(title: str, objective: str, code_cells: list[str]) -> dict:
             "metadata": {},
             "source": [
                 f"# {title}\n\n",
-                f"**EvidenceGap AI 2026 — Scientific Research Notebook**\n\n",
+                f"**EvidenceGap AI 2026 -- Scientific Research Notebook**\n\n",
                 f"### Scientific Objective\n{objective}\n\n",
                 "### Reproducibility & Environment Setup\n",
                 "Ensure project root is in Python path and dependencies are active.\n",
@@ -70,7 +70,7 @@ def write_nb(path: Path, title: str, objective: str, code_cells: list[str]):
 
 
 def generate_all():
-    # ─── PHASE 1 NOTEBOOKS ──────────────────────────────────────────
+    # --- PHASE 1 NOTEBOOKS ------------------------------------------
     p1 = NOTEBOOKS_DIR / "phase1"
 
     write_nb(
@@ -177,7 +177,7 @@ def generate_all():
         ],
     )
 
-    # ─── PHASE 2 NOTEBOOKS ──────────────────────────────────────────
+    # --- PHASE 2 NOTEBOOKS ------------------------------------------
     p2 = NOTEBOOKS_DIR / "phase2"
 
     write_nb(
@@ -272,7 +272,7 @@ def generate_all():
         ],
     )
 
-    # ─── PHASE 3 NOTEBOOKS ──────────────────────────────────────────
+    # --- PHASE 3 NOTEBOOKS ------------------------------------------
     p3 = NOTEBOOKS_DIR / "phase3"
 
     write_nb(
